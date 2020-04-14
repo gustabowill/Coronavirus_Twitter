@@ -15,7 +15,7 @@ Por questões de segurança as informações de token dos Bots foram retiradas d
 
 O programa está rodando atualmente e pode acessado pelo link abaixo:
 
-link = https://twitter.com/Coronavirus_chan
+link = https://twitter.com/Coronga_chan
 
 Com o objetivo de entender o funcionamento de diferentes plataformas, cada Bot foi hospedado em um server diferente.
 
