@@ -23,4 +23,18 @@ O Bot1 foi hospedado na plataforma Evennode = https://www.evennode.com/
 
 O Bot2 foi hospedado em um servidor linux da Amazon AWS = https://aws.amazon.com/
 
+### Imports necessários
+
+Pip install BeautifulSoup4
+
+Pip install tweepy
+
+Pip install googletrans
+
+Pip install TitterAPI
+
+Pip install Threader
+
+Pip install tdqm
+
 
