@@ -10,8 +10,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-user = '1244052257257201668'
-term = 'Detalhes na Thread'
+user = ''
 
 while True:
   for tweet in tweepy.Cursor(api.user_timeline,user, term).items(30):
