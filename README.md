@@ -17,6 +17,8 @@ O programa está rodando atualmente e pode acessado pelo link abaixo:
 
 link = https://twitter.com/Coronga_chan
 
+O programa faz uma nova postagem a cada 2.5 horas
+
 Com o objetivo de entender o funcionamento de diferentes plataformas, cada Bot foi hospedado em um server diferente.
 
 O Bot1 foi hospedado na plataforma Evennode = https://www.evennode.com/
