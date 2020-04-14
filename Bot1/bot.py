@@ -1,10 +1,10 @@
 from TwitterAPI import TwitterAPI
 import tweepy
 
-keys = dict(consumer_key='qFhbTmFTYVIoX3I4DViQJI85j',
-          consumer_secret='qrt8vNood2fyCiHXrAmsZcvnoZaMRhz0Nqt52RS25G08eZphQM',
-          access_token_key='1244052257257201668-0NY8vactaeJhO6QeCDkfVcoSenBXNe',
-          access_token_secret='3KnF9dRGjHthFrzcw4hkbwaPqOdHmDfsrVnz9GTjP5YWf')
+keys = dict(consumer_key='',
+          consumer_secret='',
+          access_token_key='',
+          access_token_secret='')
 
 api = TwitterAPI(**keys)
 
@@ -19,10 +19,10 @@ def login_to_twitter(consumer_key, consumer_secret, access_token, access_token_s
     return api
 
 def post_tweets(message):
-    consumer_key = "qFhbTmFTYVIoX3I4DViQJI85j"
-    consumer_secret = "qrt8vNood2fyCiHXrAmsZcvnoZaMRhz0Nqt52RS25G08eZphQM"
-    access_token = "1244052257257201668-0NY8vactaeJhO6QeCDkfVcoSenBXNe"
-    access_token_secret = "3KnF9dRGjHthFrzcw4hkbwaPqOdHmDfsrVnz9GTjP5YWf"
+    consumer_key = ""
+    consumer_secret = ""
+    access_token = ""
+    access_token_secret = ""
 
     api = login_to_twitter(consumer_key, consumer_secret, access_token, access_token_secret)
 
