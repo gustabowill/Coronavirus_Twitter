@@ -20,6 +20,7 @@ link = https://twitter.com/Coronavirus_cha
 Com o objetivo de entender o funcionamento de diferentes plataformas, cada Bot foi hospedado em um server diferente.
 
 O Bot1 foi hospedado na plataforma Evennode = https://www.evennode.com/
+
 O Bot2 foi hospedado em um servidor linux da Amazon AWS = https://aws.amazon.com/
 
 
