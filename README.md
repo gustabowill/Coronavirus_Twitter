@@ -15,7 +15,9 @@ Por questões de segurança as informações de token e ID dos Bots foram retira
 
 O programa está rodando atualmente e pode acessado pelo link abaixo:
 
-link = https://twitter.com/Coronavirus_upt
+link Bot 1 = https://twitter.com/Coronavirus_upt
+
+link Bot 2 = https://twitter.com/Corona_upt
 
 O programa faz uma nova postagem a cada 2.5 horas
 
