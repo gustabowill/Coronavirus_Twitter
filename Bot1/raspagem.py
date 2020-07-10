@@ -15,16 +15,16 @@ def Raspar():
     tudo = (row.text.split('\n'))
 
     #Exceção para os totais
-    if tudo[1] != 'Total:':
-      tudo [1] = Pais(tudo[1],int(tudo[2].replace(',','')),tudo[4].strip().replace(',',''),tudo[6].replace(',','.'),tudo[11].replace(',','.'),'','',tudo[13])
+    if tudo[2] != 'Total:':
+      tudo [2] = Pais(tudo[2],int(tudo[3].replace(',','')),tudo[5].strip().replace(',',''),tudo[7].replace(',','.'),tudo[13].replace(',','.'),'','',tudo[16])
 
-      if tudo[1] != 'Diamon Princess':
-        paises.append(tudo[1])
+      if tudo[2] != 'Diamon Princess':
+        paises.append(tudo[2])
     
     else:
-      tudo[13] = Pais(tudo[1],int(tudo[2].replace(',','')),tudo[4].strip().replace(',',''),tudo[6].replace(',','.'),'','','',tudo[13])
+      tudo [2] = Pais(tudo[2],int(tudo[3].replace(',','')),tudo[5].strip().replace(',',''),tudo[7].replace(',','.'),tudo[13].replace(',','.'),'','',tudo[16])
       
-      paises.append(tudo[13])
+      paises.append(tudo[2])
 
   #Substituido países que tem valores vazios por '0'
   for i in paises:
@@ -76,7 +76,7 @@ def Raspar():
     i.caso = '{0:,}'.format(i.caso).replace(',','.')
     i.morte = '{0:,}'.format(i.morte).replace(',','.')
 
-  #Organiza os países por continente
+  #Organiza os países por continente e traduz o nome dos continentes para Português
   europa = []
   asia = []
   america_sul = []
@@ -86,16 +86,22 @@ def Raspar():
 
   for i in paises:
     if i.continente == 'North America':
+      i.continente = 'América do Norte'
       america_norte.append(i)
     elif i.continente == 'South America':
+      i.continente = 'América do Sul'
       america_sul.append(i)
     elif i.continente == 'Africa':
+      i.continente = 'África'
       africa.append(i)
     elif i.continente == 'Europe':
+      i.continente = 'Europa'
       europa.append(i)
     elif i.continente == 'Asia':
+      i.continente = 'Ásia'
       asia.append(i)
     elif i.continente == 'Australia/Oceania':
+      i.continente = 'Oceania'
       oceania.append(i)
 
   #Retira os totais da lista de países
@@ -105,8 +111,5 @@ def Raspar():
   for i in paises:
     if i.nome == 'Total:':
       paises.remove(i)
-  #Muda o nome do continente de Australia/Oceania para Oceania
-  for i in oceania:
-    i.continente = 'Oceania'
 
-  return([paises,oceania,asia,africa,europa,america_sul,america_norte])
+  return([oceania,africa,asia,europa,america_norte,america_sul,paises])
