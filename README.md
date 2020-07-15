@@ -1,6 +1,6 @@
 # Coronavirus_Twitter
 
-## Como funciona?
+### Como funciona?
 
 ### Bot 1
 O programa faz a raspagem de dados no site que contém as informações sobre a situação de todos os países lidando com o Coronavírus no mundo.
