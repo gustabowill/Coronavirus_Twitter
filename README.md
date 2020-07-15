@@ -1,5 +1,7 @@
 # Coronavirus_Twitter
 
+##Como funciona?
+
 ### Bot 1
 O programa faz a raspagem de dados no site que contém as informações sobre a situação de todos os países lidando com o Coronavírus no mundo.
 Após isso, o programa trata as informações, separando os países em lista de continentes, colocando emojis de suas bandeiras e atribuindo um padrão para a forma de exibição das informações de nome e demais textos.
