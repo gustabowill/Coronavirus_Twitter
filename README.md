@@ -10,7 +10,7 @@ A lista de mensagens é então enviada para uma API que é responsável por mont
 A Thread é então enviada para o Bot que a posta na ordem correta.
 
 ### Bot 2
-O programa está constantemente monitorando o perfil do Bot 1 à procura de novas threads, que, quando encontrada são retweetadas. O motivo disso é que as threads no Bot 1 ficam desorganizadas para quem visita o perfil - devido ao padrão do Twitter de mostrar primeiro os últimos tweets postados. Assim, o Bot2 retweeta apenas o tweet inicial de cada thread, que serve de gancho para quem quiser ver a thread completa no perfil do Bot 1.
+O programa está constantemente monitorando o perfil do Bot 1 à procura de novas threads, que, quando encontrada são retweetadas. A finalidade disso é organizar as threads em um perfil separado, já que o próprio twitter não organiza as threads no perfil do usuário. Assim, o Bot2 retweeta apenas o tweet inicial de cada thread, que serve de gancho para quem quiser ver a thread completa no perfil do Bot 1.
 
 ### Avisos
 Por questões de segurança as informações de token e ID dos Bots foram retiradas dos arquivos upados, sendo necessário inserir os dados de outros Bots para o funcionamento do programa
