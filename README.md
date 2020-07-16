@@ -29,3 +29,7 @@ O Bot1 foi hospedado na plataforma Evennode = https://www.evennode.com/
 
 O Bot2 foi hospedado em um servidor linux da Amazon AWS = https://aws.amazon.com/
 
+### Vídeo demonstrativo
+
+[![ITwitter Bot Coronavírus](https://img.youtube.com/vi/8j5k7DxnHEU/0.jpg)](https://www.youtube.com/watch?v=8j5k7DxnHEU)
+
