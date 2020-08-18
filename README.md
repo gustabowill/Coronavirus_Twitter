@@ -30,7 +30,7 @@ Com o objetivo de entender o funcionamento de diferentes plataformas, cada Bot f
 
 O Bot1 foi hospedado na plataforma Evennode = https://www.evennode.com/
 
-O Bot2 foi hospedado em um servidor linux da Amazon AWS = https://aws.amazon.com/
+O Bot2 foi hospedado em uma instância linux da Amazon AWS = https://aws.amazon.com/
 
 ### Vídeo demonstrativo
 
