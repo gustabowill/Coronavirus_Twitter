@@ -19,10 +19,10 @@ def login_to_twitter(consumer_key, consumer_secret, access_token, access_token_s
     return api
 
 def post_tweets(message):
-    consumer_key = "jtHg4Sfdk3D3b0a4Ub8TqTrc2"
-    consumer_secret = "qSwc34rMmAD2c1EYXIZXU8tA5UyvEPr8Ln6cQON6LwJnLlxG6W"
-    access_token = "1241503413281718272-ScNoFrdQ9XeRnbRMc7PaddqDFofU6j"
-    access_token_secret = "DJQo0DqzqDL04B929xGvSa06f1UupgfavpQqqqaYMfT9J"
+    consumer_key = ""
+    consumer_secret = ""
+    access_token = ""
+    access_token_secret = ""
 
     api = login_to_twitter(consumer_key, consumer_secret, access_token, access_token_secret)
 
