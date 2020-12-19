@@ -8,7 +8,7 @@ from datetime import datetime
 from pytz import timezone
 from googletrans import Translator
 
-#Percorre cada lista de continente(com seus países)
+#Percorre cada lista de continentes
 for u in range(7):
   #Pega a data e hora que será feita a publicação
   data = datetime.now()
@@ -38,7 +38,7 @@ for u in range(7):
   #Cria uma string com os dados do continente a ser mostrado
   mensagem = []
   threads = []
-  mensagem_paises = "\n\n\U0001F637Casos: --------------> {}\n\u2620\uFE0FMortes: -------------> {}\n\U0001F340Curados: -----------> {} \n\u203C\uFE0FMortalidade: -----> {}% \n".format(lista_final[0].caso,lista_final[0].morte,lista_final[0].curado,lista_final[0].fatalidade)
+  mensagem_paises = "\n\n\U0001F637Casos: --------------> {}\n\u2620\uFE0FMortes: -------------> {}\n\U0001F340Recuperados: ---------> {} \n\u203C\uFE0FMortalidade: -----> {}% \n".format(lista_final[0].caso,lista_final[0].morte,lista_final[0].curado,lista_final[0].fatalidade)
   
   #Cria uma string com o nome do continente a ser mostrado
       #Execção para os dados mundiais, já que não são de nenhum continente específico
@@ -53,12 +53,12 @@ for u in range(7):
       #Execção para a Oceania, já que se possui os dados de apenas 6 países
   if lista_final[0].continente == 'Oceania':
     for h in range(1,7):
-      string = "{}{}{}\n\n\U0001F637Casos: {}\n\u2620\uFE0FMortes: {}\n\U0001F340Curados: {} \n\u203C\uFE0FMortalidade: {}%\n\U0001F9EATestes feitos: {}\n#Coronavírus".format(lista_final[h].emoji,(lista_final[h].nome).upper(),lista_final[h].emoji,lista_final[h].caso,lista_final[h].morte,lista_final[h].curado,lista_final[h].fatalidade,lista_final[h].teste)
+      string = "{}{}{}\n\n\U0001F637Casos: {}\n\u2620\uFE0FMortes: {}\n\U0001F340Recuperados: {} \n\u203C\uFE0FMortalidade: {}%\n\U0001F9EATestes feitos: {}\n#Coronavírus".format(lista_final[h].emoji,(lista_final[h].nome).upper(),lista_final[h].emoji,lista_final[h].caso,lista_final[h].morte,lista_final[h].curado,lista_final[h].fatalidade,lista_final[h].teste)
       threads.append(string)
 
   else:
-    for h in range(1,15):
-      string = "{}{}{}\n\n\U0001F637Casos: {}\n\u2620\uFE0FMortes: {}\n\U0001F340Curados: {} \n\u203C\uFE0FMortalidade: {}%\n\U0001F9EATestes feitos: {}\n#Coronavírus".format(lista_final[h].emoji,(lista_final[h].nome).upper(),lista_final[h].emoji,lista_final[h].caso,lista_final[h].morte,lista_final[h].curado,lista_final[h].fatalidade,lista_final[h].teste)
+    for h in range(1, 11):
+      string = "{}{}{}\n\n\U0001F637Casos: {}\n\u2620\uFE0FMortes: {}\n\U0001F340Recuperados: {} \n\u203C\uFE0FMortalidade: {}%\n\U0001F9EATestes feitos: {}\n#Coronavírus".format(lista_final[h].emoji,(lista_final[h].nome).upper(),lista_final[h].emoji,lista_final[h].caso,lista_final[h].morte,lista_final[h].curado,lista_final[h].fatalidade,lista_final[h].teste)
       threads.append(string)
 
 
@@ -66,3 +66,4 @@ for u in range(7):
   th = Threader(threads, api, wait=5, end_string=False)
   th.send_tweets()
   time.sleep(8900)
+  print(th)

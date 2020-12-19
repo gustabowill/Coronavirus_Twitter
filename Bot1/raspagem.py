@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
 import requests
 from classe import Pais
 from operator import attrgetter
+import json
 
 def Raspar():
   url= 'https://www.worldometers.info/coronavirus/'
@@ -12,7 +12,7 @@ def Raspar():
   #Pega o as informações e cria os objetos
   paises = []
   for row in soup.table.find_all('tr')[8:]:
-    tudo = (row.text.split('\n'))
+    tudo = row.text.split('\n')
 
     #Exceção para os totais
     if tudo[2] != 'Total:':
@@ -20,13 +20,8 @@ def Raspar():
 
       if tudo[2] != 'Diamon Princess':
         paises.append(tudo[2])
-    
-    else:
-      tudo [2] = Pais(tudo[2],int(tudo[3].replace(',','')),tudo[5].strip().replace(',',''),tudo[7].replace(',','.'),tudo[13].replace(',','.'),'','',tudo[16])
-      
-      paises.append(tudo[2])
 
-  #Substituido países que tem valores vazios por '0'
+  #Substitui países que tem valores vazios por '0'
   for i in paises:
     if i.morte == '':
       i.morte = '0'
@@ -41,7 +36,7 @@ def Raspar():
     i.fatalidade = (i.morte / i.caso) * 100
     i.fatalidade = "%.1f" % i.fatalidade
 
-  #Altera o nome de países que estão colocados de forma diferente para que seja reconhecidos na hora da comparação
+  #Altera o nome de países que estão colocados de forma diferente
   for i in paises:
     if i.nome == 'USA':
       i.nome = 'United States'
@@ -54,20 +49,14 @@ def Raspar():
     elif i.nome == 'Ivory Coast':
       i.nome = "Côte d'Ivoire (Ivory Coast)"
 
-  #Pega informação sobre os emojis
-  lista_emoji = []
-  url = 'https://flagpedia.net/emoji'
-  response = requests.get(url)
-  soup = BeautifulSoup(response.text,'html.parser')
-  for row in soup.table.find_all('tr'):
-    linha = row.text.strip()
-    lista_emoji.append(linha.replace('\n',',').split(','))
-
-  #Coloca o emoji como atributo
-  for u in paises:
-    for i in range(len(lista_emoji)):
-      if lista_emoji[i][1] == u.nome:
-        u.emoji = lista_emoji[i][0]
+  
+  arq_json = open('emojis.json', 'r', encoding='utf-8')
+  emojis_json = json.loads(arq_json.read())
+  arq_json.close()
+  for pais in paises:
+    for emoji in emojis_json:
+      if pais.nome == emoji['name']:
+        pais.emoji = emoji['emoji']
 
 
   #Organizar os objetos pelo número casos

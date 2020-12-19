@@ -1,10 +1,10 @@
 from TwitterAPI import TwitterAPI
 import tweepy
 
-keys = dict(consumer_key='HERE',
-          consumer_secret='HERE',
-          access_token_key='HERE',
-          access_token_secret='HERE')
+keys = dict(consumer_key='jtHg4Sfdk3D3b0a4Ub8TqTrc2',
+          consumer_secret='qSwc34rMmAD2c1EYXIZXU8tA5UyvEPr8Ln6cQON6LwJnLlxG6W',
+          access_token_key='1241503413281718272-ScNoFrdQ9XeRnbRMc7PaddqDFofU6j',
+          access_token_secret='DJQo0DqzqDL04B929xGvSa06f1UupgfavpQqqqaYMfT9J')
 
 api = TwitterAPI(**keys)
 
@@ -19,10 +19,10 @@ def login_to_twitter(consumer_key, consumer_secret, access_token, access_token_s
     return api
 
 def post_tweets(message):
-    consumer_key = "HERE"
-    consumer_secret = "HERE"
-    access_token = "HERE"
-    access_token_secret = "HERE"
+    consumer_key = "jtHg4Sfdk3D3b0a4Ub8TqTrc2"
+    consumer_secret = "qSwc34rMmAD2c1EYXIZXU8tA5UyvEPr8Ln6cQON6LwJnLlxG6W"
+    access_token = "1241503413281718272-ScNoFrdQ9XeRnbRMc7PaddqDFofU6j"
+    access_token_secret = "DJQo0DqzqDL04B929xGvSa06f1UupgfavpQqqqaYMfT9J"
 
     api = login_to_twitter(consumer_key, consumer_secret, access_token, access_token_secret)
 
