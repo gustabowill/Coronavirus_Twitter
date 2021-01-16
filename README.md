@@ -12,9 +12,6 @@ A Thread é então enviada para o Bot que a posta na ordem correta.
 ### Bot 2
 O programa está constantemente monitorando o perfil do Bot 1 à procura de novas threads, que, quando encontrada são retweetadas. A finalidade disso é organizar as threads em um perfil separado, já que o próprio twitter não organiza as threads no perfil do usuário. Assim, o Bot2 retweeta apenas o tweet inicial de cada thread, que serve de gancho para quem quiser ver a thread completa no perfil do Bot 1.
 
-### Motivação
-No início da pandemia, as pessoas estavam sempre curiosas sobre os dados da doença no mundo inteiro. Pelo Twitter, percebi que o Ministério da Saúde demorava para anunciar os dados na plataforma, mesmo quando estes já estavam disponíveis no site oficial do governo e em outros sites. Resolvei então criar um bot que divulga não só os dados do Brasil, assim que estes estivessem disponíveis, como também de vários outros países do mundo, já que todos estavam preocupados com a velocidade que o vírus se propagava no mundo inteiro.
-
 ### Avisos
 Por questões de segurança as informações de token e ID dos Bots foram retiradas dos arquivos upados, sendo necessário inserir os dados de outros Bots para o funcionamento do programa
 
