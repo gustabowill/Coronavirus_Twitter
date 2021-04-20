@@ -1,16 +1,13 @@
 # Coronavirus_Twitter
+Ese é um ´projeto pessoal que tem por objetivo fazer posts com informações a respeito dos casos de coronavírus em diferentes países do mundo no Twitter.
 
 ### Como funciona?
 
 ### Bot 1
-O programa faz a raspagem de dados no site que contém as informações sobre a situação de todos os países lidando com o Coronavírus no mundo.
-Após isso, o programa trata as informações, separando os países em lista de continentes, colocando emojis de suas bandeiras e atribuindo um padrão para a forma de exibição das informações de nome e demais textos.
-Feito isso, é criada uma lista com as mensagens a serem postadas (por padrão, são 15 tweets, 1 que informa a situação do continente no geral e outros 14 que informam a situação de 14 países daquele continente).
-A lista de mensagens é então enviada para uma API que é responsável por montar a Thread(conjunto de mensagens).
-A Thread é então enviada para o Bot que a posta na ordem correta.
+Faz a raspagem de dados, formata os dados e monta uma thread no Twitter com os dados de cada país.
 
 ### Bot 2
-O programa está constantemente monitorando o perfil do Bot 1 à procura de novas threads, que, quando encontrada são retweetadas. A finalidade disso é organizar as threads em um perfil separado, já que o próprio twitter não organiza as threads no perfil do usuário. Assim, o Bot2 retweeta apenas o tweet inicial de cada thread, que serve de gancho para quem quiser ver a thread completa no perfil do Bot 1.
+Retweeta todas as threads do bot1 de maneira a organizar o conteúdo para quem quiser ver threads anteriores.
 
 ### Avisos
 
