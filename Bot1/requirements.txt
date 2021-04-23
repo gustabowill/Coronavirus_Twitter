@@ -1,6 +1,7 @@
 bs4==0.0.1
-googletrans==2.4.0
 pytz==2019.3
-requests==2.23.0
+requests==2.23.0 
 threader==0.1.1
 TwitterAPI==2.5.10
+tqdm==4.60.0
+google-trans-new==1.1.9
