@@ -1,5 +1,5 @@
 # Coronavirus_Twitter
-Este é um ´projeto pessoal que tem por objetivo fazer posts com informações a respeito dos casos de coronavírus em diferentes países do mundo no Twitter.
+Este é um projeto pessoal que tem por objetivo fazer posts com informações a respeito dos casos de coronavírus em diferentes países do mundo no Twitter.
 
 ### Como funciona?
 
