@@ -1,6 +1,6 @@
 bs4==0.0.1
 pytz==2019.3
-requests==2.23.0 
+requests==2.31.0 
 threader==0.1.1
 TwitterAPI==2.5.10
 tqdm==4.60.0
